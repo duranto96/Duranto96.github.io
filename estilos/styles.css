@@ -44,15 +44,25 @@ nav a {
   height: 60px;
 }
 
+header {
+  /*background-image: url("/img/Background.png");
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  height: 35em; /* Ajusta la altura según tus necesidades */
+}
+
 .titles {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 25%;
   padding-bottom: 15%;
+  font-weight: 500 !important;
 }
-
-.titles img {
+mark {
+  color: #3b434bd0 !important;
+}
+header img {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,8 +91,18 @@ nav a {
 #presentation .box {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.342);
+  background: rgba(53, 29, 20, 0.438);
   padding: 25px;
   box-sizing: border-box;
   text-align: center;
+}
+
+@media (max-widht: 768) {
+  .titles h1 {
+    font-size: 5rem;
+  }
+  .titles {
+    display: flex;
+    flex-direction: column !important;
+  }
 }
